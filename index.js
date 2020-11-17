@@ -31,10 +31,10 @@ function unleashDog(dogName, dogBreed){
 
 const routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog] ;
 
-function exerciseDog(h,r) {
+function exerciseDog(dogName,dogBreed) {
   let exercises = [];
   for (let i = 0; i < routine.length; i++) {
-      exercises.push(routine[i](h,r))
+      exercises.push(routine[i](dogName,dogBreed))
 }
 return exercises; 
 } 
